@@ -8,7 +8,7 @@ const config =require("../config/environment/" + process.env.NODE_ENV + "config.
 
 
 
-class ProductSetup extends Page()
+class ProductSetup extends Page
 
     {
 
@@ -83,16 +83,23 @@ class ProductSetup extends Page()
         async getProductName()
 
         {
-            console.log(" Print the product name ")
+            console.log(" Print the product name and price ")
             let productvalues = await this.productName;
+            let productPrice =await this.productPrice;
+            console.log(productvalues.length);
             for (let i=0;i<productvalues.length;i++)
 
 
+
                 {
-                    var prodname =await this.productvalues.getText();
+                    var prodname =await productvalues[i].getHTML(false)
                     console.log("The product name is " + prodname);
+                    var prodprice =await productPrice[i].getHTML(false)
+                    console.log("The product price is " + prodprice);
 
                 }
+
+
 
         }
 

@@ -42,6 +42,7 @@ it('should be able to logout', async () =>
         
     {
         console.log ("Executing third test case")
+        
         await ApplicationLogin.logOut();
         await browser.pause(3000);
         console.log("Logout succesfull")
@@ -52,10 +53,13 @@ it('should be able to logout', async () =>
     }
 )
 
+
     it('should be able to navigate to thw women clothing and display', async () =>
         
         {
             console.log ("Executing third test case")
+            await ProductSelction.viewProductDress();
+            await browser.pause(3000);
             await ProductSelction.getProductName();
             await browser.pause(3000);
            
