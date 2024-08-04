@@ -94,8 +94,10 @@ class ProductSetup extends Page
                 {
                     var prodname =await productvalues[i].getHTML(false)
                     console.log("The product name is " + prodname);
+                    return prodname;
                     var prodprice =await productPrice[i].getHTML(false)
                     console.log("The product price is " + prodprice);
+                    return prodprice;
 
                 }
 
