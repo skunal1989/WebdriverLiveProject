@@ -8,6 +8,9 @@ describe("This is the third test case ", async () =>
 
     {
 
+        var thisTCData =JSON.stringify(TestData);
+        let newTCData =JSON.parse(thisTCData)
+
         it('should launch the application', async () =>
         
             {
@@ -58,9 +61,9 @@ describe("This is the third test case ", async () =>
                 
                 {
                     console.log ("Executing third test case")
-                    let dressName[]=await ProductSelction.viewProductDress();
+                    await ProductSelction.viewProductDress();
                     await browser.pause(3000);
-                    let dressPrice[] = await ProductSelction.getProductName();
+                    await ProductSelction.getProductName();
                     await browser.pause(3000);
                    
       
@@ -73,15 +76,13 @@ describe("This is the third test case ", async () =>
                 {
                     console.log ("Executing fourth test case")
                     console.log("Executing test case with different data")
-                    for (let i=0; i<TestData.scenarios.length;i++)
-                        {
-                           console.log(TestData.scenarios.values.testDescription);
-                           console.log(TestData.scenarios.values.DressName)
+                    console.log(TestData.scenario1.testDescription);
+                    console.log(TestData.scenario1.DressName);
 
-                        }
+                }
                   
       
-                }
+                
             )
 
 

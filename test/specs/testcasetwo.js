@@ -1,9 +1,9 @@
-import { expect } from '@wdio/globals';
+
 import ApplicationLogin from '../pageobject/application.Login.page.js';
 import ProductSelction from '../pageobject/productSelection.js';
 
 
-describe('My Login application', () => {
+describe('My Login application', async () => {
 
 
 
@@ -20,7 +20,6 @@ describe('My Login application', () => {
     }
 
 )
-
 
 
 it('should be able to enter details and login to the application', async () =>

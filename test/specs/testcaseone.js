@@ -1,14 +1,16 @@
-import { expect } from '@wdio/globals';
+
 import ApplicationLogin from '../pageobject/application.Login.page.js'
+import TestData from '../testData/testdata.json' assert {type: "json"};
 
 
-describe('My Login application', () => {
+describe('My Login application', async () => {
 
 
 
     it('should launch the application', async () =>
         
     {
+        
         console.log ("Executing first test case")
         await ApplicationLogin.open();
         await browser.pause(3000);

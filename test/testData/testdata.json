@@ -1,37 +1,43 @@
 {
+
     
-"scenarios": [
+"scenario1": 
 
     {
         "testcaseno": "testcaseone",
         "testDescription": "This is the first test case",
         "DressName":" Sleeveless Dress",
-        "DressPrice": "1000"
+        "DressPrice": 1000
 
     },
+
+    "scenario2":
 
     {
         "testcaseno": "testcasetwo",
         "testDescription": "This is the second test case",
         "DressName":" Stylish Dress",
-        "DressPrice": "1500"
+        "DressPrice": 1500
 
     },
-    
+
+    "scenario3":
+
     {
 
         "testcaseno": "testcasethree",
         "testDescription": "This is the second test case",
         "DressName":" Rose Pink Embroidered Maxi Dress",
-        "DressPrice": "2200"
+        "DressPrice": 2200
 
-    }
-
-
-
+    }  
+    
 
 
 
 
-]
+
+
+
+
 }
